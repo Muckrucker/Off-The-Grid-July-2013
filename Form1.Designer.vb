@@ -26,7 +26,10 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_go = New System.Windows.Forms.Button()
         Me.btn_Filter = New System.Windows.Forms.Button()
-        Me.btn_xsd = New System.Windows.Forms.Button()
+        Me.btn_js = New System.Windows.Forms.Button()
+        Me.tbResults = New System.Windows.Forms.TextBox()
+        Me.tbClassName = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'tb_url
@@ -35,7 +38,7 @@ Partial Class Form1
         Me.tb_url.Name = "tb_url"
         Me.tb_url.Size = New System.Drawing.Size(345, 20)
         Me.tb_url.TabIndex = 0
-        Me.tb_url.Text = "http://www.twitter.com"
+        Me.tb_url.Text = "http://ptlr38/fundraiser?tab=3"
         '
         'Label1
         '
@@ -48,7 +51,7 @@ Partial Class Form1
         '
         'btn_go
         '
-        Me.btn_go.Location = New System.Drawing.Point(401, 7)
+        Me.btn_go.Location = New System.Drawing.Point(392, 9)
         Me.btn_go.Name = "btn_go"
         Me.btn_go.Size = New System.Drawing.Size(75, 23)
         Me.btn_go.TabIndex = 2
@@ -57,29 +60,57 @@ Partial Class Form1
         '
         'btn_Filter
         '
-        Me.btn_Filter.Location = New System.Drawing.Point(546, 5)
+        Me.btn_Filter.Location = New System.Drawing.Point(392, 100)
         Me.btn_Filter.Name = "btn_Filter"
         Me.btn_Filter.Size = New System.Drawing.Size(75, 23)
         Me.btn_Filter.TabIndex = 3
         Me.btn_Filter.Text = "Filter Elems"
         Me.btn_Filter.UseVisualStyleBackColor = True
         '
-        'btn_xsd
+        'btn_js
         '
-        Me.btn_xsd.Location = New System.Drawing.Point(546, 50)
-        Me.btn_xsd.Name = "btn_xsd"
-        Me.btn_xsd.Size = New System.Drawing.Size(75, 23)
-        Me.btn_xsd.TabIndex = 4
-        Me.btn_xsd.Text = "XSD gen"
-        Me.btn_xsd.UseVisualStyleBackColor = True
+        Me.btn_js.Location = New System.Drawing.Point(392, 38)
+        Me.btn_js.Name = "btn_js"
+        Me.btn_js.Size = New System.Drawing.Size(75, 23)
+        Me.btn_js.TabIndex = 3
+        Me.btn_js.Text = "JS Inject"
+        Me.btn_js.UseVisualStyleBackColor = True
+        '
+        'tbResults
+        '
+        Me.tbResults.Location = New System.Drawing.Point(15, 41)
+        Me.tbResults.Multiline = True
+        Me.tbResults.Name = "tbResults"
+        Me.tbResults.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.tbResults.Size = New System.Drawing.Size(371, 266)
+        Me.tbResults.TabIndex = 5
+        '
+        'tbClassName
+        '
+        Me.tbClassName.Location = New System.Drawing.Point(466, 74)
+        Me.tbClassName.Name = "tbClassName"
+        Me.tbClassName.Size = New System.Drawing.Size(100, 20)
+        Me.tbClassName.TabIndex = 6
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(394, 77)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Class Name:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(646, 319)
-        Me.Controls.Add(Me.btn_xsd)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.tbClassName)
         Me.Controls.Add(Me.btn_Filter)
+        Me.Controls.Add(Me.tbResults)
+        Me.Controls.Add(Me.btn_js)
         Me.Controls.Add(Me.btn_go)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.tb_url)
@@ -93,6 +124,9 @@ Partial Class Form1
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btn_go As System.Windows.Forms.Button
     Friend WithEvents btn_Filter As System.Windows.Forms.Button
-    Friend WithEvents btn_xsd As System.Windows.Forms.Button
+    Friend WithEvents btn_js As System.Windows.Forms.Button
+    Friend WithEvents tbResults As System.Windows.Forms.TextBox
+    Friend WithEvents tbClassName As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

@@ -6,7 +6,21 @@ OTGTestHarness
 </name>
 </assembly>
 <members>
-<member name="M:OTG_Test_Harness.Form1.CreateClasses(System.Xml.Linq.XDocument)">
+<member name="M:OTG_Test_Harness.Form1.BuildGenericSelector(System.String,System.Boolean,System.String,System.String,System.String,OTG_Test_Harness.TextCompareTypes,System.String,System.String,System.String,System.String)">
+	<summary>
+ Returns a selector string based on the parameters supplied
+ Note: Any parameter left empty will not be used in the element lookup.
+ </summary>
+	<param name="tagname">The html tagname of the element (ie: a, button, etc)</param>
+	<param name="wrapSelector">Boolean indicating whether to wrap all of the selectors in single quotes.  Note: Primarily only useful when executing custom jQuery</param>
+	<param name="id">The id of the element.  This will handle partial matches as well (ie: '_elementdesired' will work for 'ctrl0123_elementdesired')</param>
+	<param name="type">The html type of the element (ie: button, text, etc)</param>
+	<param name="textValue">The value present on the element</param>
+	<param name="textCompare">The type of text comparison to use</param>
+	<param name="title">The title attribute of the element</param>
+	<param name="classValue">The class attribute of the element</param>
+	<remarks></remarks>
+</member><member name="M:OTG_Test_Harness.Form1.CreateClasses(System.Xml.Linq.XDocument)">
 	<summary>
  This sub takes the specified file name, loads its xml version, creates an xsd from it, parses the xsd into code classes
   and finally links the data from the mappingfile into the code classes

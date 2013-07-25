@@ -81,5 +81,19 @@ Namespace My.Resources
                 Return ResourceManager.GetString("HtmlToXml", resourceCulture)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;root class=&quot;Fundraiser&quot; template=&quot;&quot;&gt;
+        '''  &lt;givingLevels jQuery=&quot;$(&amp;quot;input[id$=&apos;1&apos;][type=&apos;radio&apos;]&amp;quot;)&quot; type=&quot;Click&quot; /&gt;
+        '''  &lt;chkAnonymous jQuery=&quot;$(&amp;quot;input[id$=&apos;chkAnonymous&apos;][type=&apos;checkbox&apos;]&amp;quot;)&quot; type=&quot;Click&quot; /&gt;
+        '''  &lt;chkMGCompany jQuery=&quot;$(&amp;quot;input[id$=&apos;chkMGCompany&apos;][type=&apos;checkbox&apos;]&amp;quot;)&quot; type=&quot;Click&quot; /&gt;
+        '''  &lt;btnNext jQuery=&quot;$(&amp;quot;input[id$=&apos;btnNext&apos;][type=&apos;submit&apos;][class*=&apos;BBFormSubmitButton DonationSubmitButton&apos;]&amp;quot;)&quot; type=&quot;Click&quot; /&gt;
+        '''  &lt;btnBack jQuery=&quot;$(&amp;quot;input[id$=&apos;btnBack&apos;][t [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property mappingfile() As String
+            Get
+                Return ResourceManager.GetString("mappingfile", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
