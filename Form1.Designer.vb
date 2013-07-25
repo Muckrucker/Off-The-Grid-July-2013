@@ -26,6 +26,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_go = New System.Windows.Forms.Button()
         Me.btn_Filter = New System.Windows.Forms.Button()
+        Me.btn_xsd = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'tb_url
@@ -63,11 +64,21 @@ Partial Class Form1
         Me.btn_Filter.Text = "Filter Elems"
         Me.btn_Filter.UseVisualStyleBackColor = True
         '
+        'btn_xsd
+        '
+        Me.btn_xsd.Location = New System.Drawing.Point(546, 50)
+        Me.btn_xsd.Name = "btn_xsd"
+        Me.btn_xsd.Size = New System.Drawing.Size(75, 23)
+        Me.btn_xsd.TabIndex = 4
+        Me.btn_xsd.Text = "XSD gen"
+        Me.btn_xsd.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(646, 319)
+        Me.Controls.Add(Me.btn_xsd)
         Me.Controls.Add(Me.btn_Filter)
         Me.Controls.Add(Me.btn_go)
         Me.Controls.Add(Me.Label1)
@@ -82,5 +93,6 @@ Partial Class Form1
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btn_go As System.Windows.Forms.Button
     Friend WithEvents btn_Filter As System.Windows.Forms.Button
+    Friend WithEvents btn_xsd As System.Windows.Forms.Button
 
 End Class

@@ -1,0 +1,30 @@
+<root class="Fundraiser" template="fakeTemplate">
+  <givingLevels jQuery="$(&quot;input[id$='1'][type='radio']&quot;)" type="Click" />
+  <chkAnonymous jQuery="$(&quot;input[id$='chkAnonymous'][type='checkbox']&quot;)" type="Click" />
+  <chkMGCompany jQuery="$(&quot;input[id$='chkMGCompany'][type='checkbox']&quot;)" type="Click" />
+  <btnNext jQuery="$(&quot;input[id$='btnNext'][type='submit'][class*='BBFormSubmitButton DonationSubmitButton']&quot;)" type="Click" />
+  <btnBack jQuery="$(&quot;input[id$='btnBack'][type='button'][class*='aspNetDisabled BBFormSubmitButton FRSubmitButton'][style*='display: none']&quot;)" type="Click" />
+  <btnNext jQuery="$(&quot;input[id$='btnNext'][type='button'][class*='BBFormSubmitButton FRSubmitButton'][style*='display: none']&quot;)" type="Click" />
+  <txtAmount jQuery="$(&quot;input[id$='txtAmount'][type='text'][class*='BBFormTextbox DonationTextboxNarrow']&quot;)" type="Type" />
+  <DatePickerStart jQuery="$(&quot;input[id$='DatePickerStart'][type='text'][class*='BBFormTextbox DonationTextboxNarrow hasDatepicker']&quot;)" type="Type" />
+  <DatePickerEnd jQuery="$(&quot;input[id$='DatePickerEnd'][type='text'][class*='BBFormTextbox DonationTextboxNarrow hasDatepicker']&quot;)" type="Type" />
+  <txtFirstName jQuery="$(&quot;input[id$='txtFirstName'][type='text'][class*='BBFormTextbox DonationCaptureTextboxWide']&quot;)" type="Type" />
+  <txtLastName jQuery="$(&quot;input[id$='txtLastName'][type='text'][class*='BBFormTextbox DonationCaptureTextboxWide']&quot;)" type="Type" />
+  <CityUS jQuery="$(&quot;input[id$='CityUS'][type='text'][class*='BBFormTextbox DonationCaptureTextbox']&quot;)" type="Type" />
+  <ZipUS jQuery="$(&quot;input[id$='ZipUS'][type='text'][class*='BBFormTextbox DonationCaptureTextbox']&quot;)" type="Type" />
+  <txtPhone jQuery="$(&quot;input[id$='txtPhone'][type='text'][class*='BBFormTextbox DonationCaptureTextbox']&quot;)" type="Type" />
+  <txtEmail jQuery="$(&quot;input[id$='txtEmail'][type='text'][class*='BBFormTextbox DonationCaptureTextboxWide']&quot;)" type="Type" />
+  <txtCardholder jQuery="$(&quot;input[id$='txtCardholder'][type='text'][class*='BBFormTextbox DonationCaptureTextboxWide']&quot;)" type="Type" />
+  <txtCardNumber jQuery="$(&quot;input[id$='txtCardNumber'][type='text'][class*='BBFormTextbox DonationCaptureTextboxWide']&quot;)" type="Type" />
+  <txtCSC jQuery="$(&quot;input[id$='txtCSC'][type='text'][class*='BBFormTextbox DonationCaptureTextboxNarrow']&quot;)" type="Type" />
+  <MGCompany jQuery="$(&quot;input[id$='MGCompany'][type='text'][class*='BBFormTextbox DonationCaptureTextboxWide']&quot;)" type="Type" />
+  <AddressLine jQuery="$(&quot;textarea[id$='AddressLine'][class*='BBFormTextArea DonationCaptureTextArea']&quot;)" type="Type" />
+  <ddlFrequency jQuery="$(&quot;select[id$='ddlFrequency'][class*='BBFormSelectList DonationSelectList']&quot;)" type="Select" />
+  <ddlDayOfWeek1 jQuery="$(&quot;select[id$='ddlDayOfWeek1'][class*='BBFormSelectList DonationSelectList']&quot;)" type="Select" />
+  <cboTitle jQuery="$(&quot;select[id$='cboTitle'][class*='BBFormSelectList DonationCaptureSelectList']&quot;)" type="Select" />
+  <Country jQuery="$(&quot;select[id$='Country'][class*='BBFormSelectList DonationCaptureSelectList']&quot;)" type="Select" />
+  <StateUS jQuery="$(&quot;select[id$='StateUS'][class*='BBFormSelectList DonationCaptureSelectList']&quot;)" type="Select" />
+  <cboCardType jQuery="$(&quot;select[id$='cboCardType'][class*='BBFormSelectList DonationCaptureSelectList']&quot;)" type="Select" />
+  <cboMonth jQuery="$(&quot;select[id$='cboMonth'][class*='BBFormSelectList DonationCaptureSelectListNarrow']&quot;)" type="Select" />
+  <cboYear jQuery="$(&quot;select[id$='cboYear'][class*='BBFormSelectList DonationCaptureSelectListNarrow']&quot;)" type="Select" />
+</root>

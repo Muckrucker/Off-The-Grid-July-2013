@@ -17,7 +17,6 @@ C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harn
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.exe
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.xml
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.pdb
-C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\chromedriver.exe
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.exe
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.pdb
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.xml
@@ -27,3 +26,5 @@ C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harn
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG_Test_Harness.Form1.resources
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG_Test_Harness.Resources.resources
 C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.vbproj.GenerateResource.Cache
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\chromedriver.exe
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\mappingfile.xml

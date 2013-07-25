@@ -6,7 +6,46 @@ OTGTestHarness
 </name>
 </assembly>
 <members>
-<member name="P:OTG_Test_Harness.My.Resources.Resources.ResourceManager">
+<member name="M:OTG_Test_Harness.Form1.CreateClasses(System.Xml.Linq.XDocument)">
+	<summary>
+ This sub takes the specified file name, loads its xml version, creates an xsd from it, parses the xsd into code classes
+  and finally links the data from the mappingfile into the code classes
+ </summary>
+	<param name="xDoc">The XDocument object containing all of the prepped data for generation</param>
+</member><member name="M:OTG_Test_Harness.Form1.Generate_ClassHeader(System.String,System.String)">
+	<summary>
+ Generates the required code to create the Instantiation of a class
+ </summary>
+	<param name="className">The name to use for the newly generated class</param>
+	<param name="templateClass">(Optional) The name of the class to use as the Template class for the newly generated class</param>
+	<returns>String formatted in VB.Net for the click Sub</returns>
+</member><member name="M:OTG_Test_Harness.Form1.Generate_Click(System.String,System.String)">
+	<summary>
+ Generates the required code to operate a Click step
+ </summary>
+	<param name="jQuery">The jQuery to access the item to click</param>
+	<param name="subName">The name to use in code for the Sub to drive the Click keyword</param>
+	<returns>String formatted in VB.Net for the click Sub</returns>
+</member><member name="M:OTG_Test_Harness.Form1.Generate_Type(System.String,System.String)">
+	<summary>
+ Generates the required code to operate a Type step
+ </summary>
+	<param name="jQuery">The jQuery to access the item to click</param>
+	<param name="subName">The name to use in code for the Subs to drive the Set and Verify keywords</param>
+	<returns>String formatted in VB.Net for the click Sub</returns>
+</member><member name="M:OTG_Test_Harness.Form1.Generate_Select(System.String,System.String)">
+	<summary>
+ Generates the required code to operate a Select step
+ </summary>
+	<param name="jQuery">The jQuery to access the item to click</param>
+	<param name="subName">The name to use in code for the Sub to drive the Set and Verify keywords</param>
+	<returns>String formatted in VB.Net for the click Sub</returns>
+</member><member name="M:OTG_Test_Harness.Form1.CreateFolder(System.String)">
+	<summary>
+ Used to make a backup copy of existing files and delete the originals so code-gen can continue
+ </summary>
+	<param name="fileName">The filename to create the folder name off of</param>
+</member><member name="P:OTG_Test_Harness.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -31,6 +70,15 @@ jQueryScript.setAttribute("src", "http://code.jquery.com/jquery-1.10.2.min.js");
  * By Eli Grey, http://eligrey.com 
  * Public domain. 
  * NO WARRANTY [rest of string was truncated]";.
+</summary>
+</member><member name="P:OTG_Test_Harness.My.Resources.Resources.mappingfile">
+	<summary>
+  Looks up a localized string similar to &lt;root class="Fundraiser" template=""&gt;
+  &lt;givingLevels jQuery="$(&amp;quot;input[id$='1'][type='radio']&amp;quot;)" type="Click" /&gt;
+  &lt;chkAnonymous jQuery="$(&amp;quot;input[id$='chkAnonymous'][type='checkbox']&amp;quot;)" type="Click" /&gt;
+  &lt;chkMGCompany jQuery="$(&amp;quot;input[id$='chkMGCompany'][type='checkbox']&amp;quot;)" type="Click" /&gt;
+  &lt;btnNext jQuery="$(&amp;quot;input[id$='btnNext'][type='submit'][class*='BBFormSubmitButton DonationSubmitButton']&amp;quot;)" type="Click" /&gt;
+  &lt;btnBack jQuery="$(&amp;quot;input[id$='btnBack'][t [rest of string was truncated]";.
 </summary>
 </member><member name="T:OTG_Test_Harness.My.Resources.Resources">
 	<summary>
