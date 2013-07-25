@@ -17,17 +17,16 @@ Public Class Form1
         _driver.Navigate().GoToUrl(tb_url.Text)
     End Sub
 
-    Private Sub btn_js_Click(sender As Object, e As EventArgs) Handles btn_js.Click
-
-        Dim js As IJavaScriptExecutor = _driver
-        js.ExecuteScript(My.Resources.HtmlToXml)
-        _xDoc = XDocument.Parse(CStr(js.ExecuteScript("return HtmlAsXml.toXmlString();")))
-    End Sub
-
     Private Sub btn_Filter_Click(sender As Object, e As EventArgs) Handles btn_Filter.Click
         If _xDoc Is Nothing Then
             btn_go_Click(Nothing, Nothing)
         End If
+
+        'inject the htmlasxml script and fetch the returned xmldoc
+        Dim js As IJavaScriptExecutor = _driver
+        js.ExecuteScript(My.Resources.HtmlToXml)
+        _xDoc = XDocument.Parse(CStr(js.ExecuteScript("return HtmlAsXml.toXmlString();")))
+
         'all elements by execution type
         Dim elementsToConvert_Type As IEnumerable(Of XElement)
         Dim elementsToConvert_Click As IEnumerable(Of XElement)
