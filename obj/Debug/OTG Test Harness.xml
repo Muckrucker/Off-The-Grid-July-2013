@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OTGTestHarness
+</name>
+</assembly>
+<members>
+<member name="P:OTG_Test_Harness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:OTG_Test_Harness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:OTG_Test_Harness.My.Resources.Resources.HtmlToXml">
+	<summary>
+  Looks up a localized string similar to /*! jQuery v1.10.2 jquery.com | jquery.org/license */
+//load jQuery 1.10.2.min
+jQueryScript = window.document.getElementsByTagName("body")[0].appendChild(document.createElement("script"));
+jQueryScript.setAttribute("language", "javascript");
+jQueryScript.setAttribute("type", "text/javascript");
+jQueryScript.setAttribute("src", "http://code.jquery.com/jquery-1.10.2.min.js");
+
+/* 
+ * DOMParser HTML extension 
+ * 2012-02-02 
+ * 
+ * By Eli Grey, http://eligrey.com 
+ * Public domain. 
+ * NO WARRANTY [rest of string was truncated]";.
+</summary>
+</member><member name="T:OTG_Test_Harness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
