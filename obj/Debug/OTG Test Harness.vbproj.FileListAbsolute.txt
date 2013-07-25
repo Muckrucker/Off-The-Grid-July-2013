@@ -13,3 +13,17 @@ C:\Users\Stephen\Documents\GitHub\OTG Test Harness\obj\Debug\OTG Test Harness.ex
 C:\Users\Stephen\Documents\GitHub\OTG Test Harness\obj\Debug\OTG Test Harness.xml
 C:\Users\Stephen\Documents\GitHub\OTG Test Harness\obj\Debug\OTG Test Harness.pdb
 C:\Users\Stephen\Documents\GitHub\OTG Test Harness\bin\Debug\chromedriver.exe
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.exe.config
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.exe
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.xml
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.pdb
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\chromedriver.exe
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.exe
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.pdb
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\OTG Test Harness.xml
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\WebDriver.dll
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\bin\Debug\WebDriver.xml
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.vbprojResolveAssemblyReference.cache
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG_Test_Harness.Form1.resources
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG_Test_Harness.Resources.resources
+C:\Users\Stephen\Documents\GitHub\Off-The-Grid-July-2013\obj\Debug\OTG Test Harness.vbproj.GenerateResource.Cache
