@@ -26,13 +26,14 @@ Public Class Form1
         If _xDoc Is Nothing Then
             btn_go_Click(Nothing, Nothing)
         End If
-        'all elements
+        'all elements by execution type
         Dim elementsToConvert_Type As IEnumerable(Of XElement)
         Dim elementsToConvert_Click As IEnumerable(Of XElement)
         Dim elementsToConvert_Select As IEnumerable(Of XElement)
 
         'text input types
         Dim textInputElements As IEnumerable(Of XElement)
+        Dim textAreaElements As IEnumerable(Of XElement)
 
         'click types
         Dim anchorElements As IEnumerable(Of XElement)
@@ -49,6 +50,10 @@ Public Class Form1
                                     node.Attribute("type").Value.Equals("password", StringComparison.OrdinalIgnoreCase)
                             Select node
         elementsToConvert_Type = textInputElements
+
+        textAreaElements = From node In _xDoc.Descendants("textarea")
+                            Select node
+        elementsToConvert_Type = elementsToConvert_Type.Union(textAreaElements)
 
         'click-based elements
         'grab anchor elements
