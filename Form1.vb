@@ -102,11 +102,31 @@ Public Class Form1
 
     Private Function updateElements(ByVal elements As List(Of XElement), ByVal type As String) As List(Of XElement)
         Dim updatedList As New List(Of XElement)
-
+        Dim matchList As New List(Of MatchCount)
         For Each element As XElement In elements
             Dim newElement As XElement = parseJquery(element)
             If newElement IsNot Nothing Then
                 newElement.SetAttributeValue("type", type)
+                'check if the list already has an element with the same name, if it does, add a counter
+                For Each updatedElement As XElement In updatedList
+                    If updatedElement.Name.LocalName = newElement.Name.LocalName Then
+                        'check to see if we've already hit a "match" before. input -> input_gen1 -> input_gen2 ect
+                        Dim found As Boolean = False
+                        For Each match As MatchCount In matchList
+                            If match.name = newElement.Name.LocalName Then
+                                match.count = match.count + 1
+                                newElement.Name = newElement.Name.LocalName & "_gen" & match.count
+                                found = True
+                                Exit For
+                            End If
+                        Next
+                        If Not found Then
+                            matchList.Add(New MatchCount(newElement.Name.LocalName, 2))
+                            newElement.Name = newElement.Name.LocalName & "_gen2"
+                        End If
+                        Exit For
+                    End If
+                Next
                 updatedList.Add(newElement)
             Else
                 'something went wrong, we should say what
@@ -447,3 +467,13 @@ Public Enum TextCompareTypes
     Contains = 1
     Value = 2
 End Enum
+
+Public Class MatchCount
+    Public name As String
+    Public count As Integer
+
+    Public Sub New(ByVal matchName As String, ByVal matchCount As Integer)
+        name = matchName
+        count = matchCount
+    End Sub
+End Class
