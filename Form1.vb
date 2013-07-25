@@ -341,9 +341,6 @@ Public Class Form1
         generatedString.AppendLine(String.Format("Public Class {0}", className))
         generatedString.AppendLine("     Inherits AutoBase")
         generatedString.AppendLine()
-        generatedString.AppendLine("Public Sub New()")
-        generatedString.AppendLine("End Sub")
-        generatedString.AppendLine()
         If Not String.IsNullOrEmpty(templateClass) Then
             generatedString.AppendLine(String.Format("Public Function Template() As {0}", templateClass))
             generatedString.AppendLine(String.Format("     Return New {0}()", templateClass))

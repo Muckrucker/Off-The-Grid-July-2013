@@ -1,0 +1,45 @@
+﻿<KeywordTests xmlns="http://schemas.blackbaud.com/bats/UIengine" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--Unique Id - for tracking purposes-->
+  <TestGuid>4a1b5058-a93c-4aad-9fcc-88cc38a54c31</TestGuid>
+  <!--Specifies the test case author who is responsible for the test case and results-->
+  <Owners>
+    <Owner name="BBNT\StephenMc" />
+  </Owners>
+  <!--Use parameters to abstract data away from your test
+   **** To replace entire attribute value use @NAME
+   **** To replace part of an attribute value use {@NAME} -->
+  <TestParameters>
+    <Parameter name="NAME" value="Value" />
+  </TestParameters>
+  <TestsToExecute>
+    <Test testId="Smoke_OTG_Keywords" browser="{@BROWSER}" driver="{@DRIVER}" URL="{@URL}"/>
+  </TestsToExecute>
+  <TestDefinitions>
+    <!--@testId: Unique identifer that seperates this test case apart from other test cases
+    ****@name: Specify a human readable (friendly) name to identify this test case
+    ****@description: Provide additional information about this particular test case
+    ****@productName: product to be tested (product value should be chosen from a list)
+    ****@ambitionLevel: Specifies type of test coverage (Smoke,Go/No go,Regression, etc.)
+    ****@impact: Specifies the priority of this test case (High,Medium,Low)
+    ****@crNumber: (Optional) Test cases was written to test a bug found-->
+    <TestDefinition testId="Smoke_OTG_Keywords" 
+					name="Smoke Off The Grid KeywordsPlease" 
+					description="Executing the OTG keyword tests" 
+					productName="Infinity" ambitionLevel="Go/No Go" impact="Critical">
+      <!--Begin work here-->
+		<Catalog_AutoBase>
+			<Navigate url="www.google.com"/>
+			<Navigate url="http://ptlr38/fundraiser?tab=3"/>
+		</Catalog_AutoBase>
+		<Catalog_FundraiserTwo>
+			<Set_txtFirstName value="Auto-Auto"/>
+			<Verify_txtFirstName value="Auto-Auto"/>
+			
+			<Set_AddressLine value="123 Abc St."/>
+			<Verify_AddressLine value="123 Abc St."/>
+
+			<Click_Next/>
+		</Catalog_FundraiserTwo>
+    </TestDefinition>
+  </TestDefinitions>
+</KeywordTests>

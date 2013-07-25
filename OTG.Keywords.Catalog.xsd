@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://schemas.blackbaud.com/bats/UIengine"
+        xmlns:UI = "http://schemas.blackbaud.com/bats/UIengine"
+        xmlns:xs = "http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.w3.org/1999/xhtml"/>
+    <xs:element name="Catalog_AutoBase" substitutionGroup="UI:UITask">
+        <xs:complexType mixed="true">
+            <xs:complexContent>
+                <xs:extension base="UI:Type_UITask">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:group minOccurs="0" maxOccurs="unbounded" ref="UI:Catalog_AutoBase.Tabs"/>
+                    </xs:choice>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Catalog_FundraiserTwo" substitutionGroup="UI:UITask">
+        <xs:complexType mixed="true">
+            <xs:complexContent>
+                <xs:extension base="UI:Type_UITask">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:group minOccurs="0" maxOccurs="unbounded" ref="UI:Catalog_FundraiserTwo.Tabs"/>
+                    </xs:choice>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="Catalog_AutoBase.Tabs">
+        <xs:choice>
+            <xs:element name="Navigate" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="url" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="jQuery" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="SetField" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="jQuery" type="xs:string" use="required"/>
+
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                                    <xs:attribute name="type" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Text"/>
+                                                <xs:enumeration value="Select"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="VerifyField" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="jQuery" type="xs:string" use="required"/>
+
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                                    <xs:attribute name="type" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Text"/>
+                                                <xs:enumeration value="Select"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:choice>
+    </xs:group>
+
+    <xs:group name="Catalog_FundraiserTwo.Tabs">
+        <xs:choice>
+            <xs:element name="Click_Login" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Login' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Home" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Home' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Fundraiser" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Fundraiser' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SavedGrantRequest" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SavedGrantRequest' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_DonorAdvisedGrantRequest" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'DonorAdvisedGrantRequest' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_GrantRecipientHistory" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'GrantRecipientHistory' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_RecipientSearch" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'RecipientSearch' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Donate" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Donate' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Join" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Join' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Search" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Search' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SkipLink" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SkipLink' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_help" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'help' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_fancybox_close" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'fancybox_close' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_fancybox_left" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'fancybox_left' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_fancybox_right" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'fancybox_right' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_rdo_1_1" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'rdo_1_1' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_chkAnonymous" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'chkAnonymous' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_chkMGCompany" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'chkMGCompany' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_DonateNow" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'DonateNow' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Previous" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Previous' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Next" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Next' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtAmount" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtAmount' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtAmount" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtAmount' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_input" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'input' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_input" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'input' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_DatePickerEnd" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'DatePickerEnd' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_DatePickerEnd" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'DatePickerEnd' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtFirstName" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtFirstName' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtFirstName" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtFirstName' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtLastName" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtLastName' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtLastName" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtLastName' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_CityUS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'CityUS' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_CityUS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'CityUS' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_ZipUS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'ZipUS' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_ZipUS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'ZipUS' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtPhone" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtPhone' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtPhone" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtPhone' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtEmail" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtEmail' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtEmail" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtEmail' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtCardholder" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtCardholder' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtCardholder" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtCardholder' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtCardNumber" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtCardNumber' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtCardNumber" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtCardNumber' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_txtCSC" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'txtCSC' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_txtCSC" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'txtCSC' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_MGCompany" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'MGCompany' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_MGCompany" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'MGCompany' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_AddressLine" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'AddressLine' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_AddressLine" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'AddressLine' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_ddlFrequency" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'ddlFrequency' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_ddlFrequency" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'ddlFrequency' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_ddlDayOfWeek1" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'ddlDayOfWeek1' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_ddlDayOfWeek1" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'ddlDayOfWeek1' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_cboTitle" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'cboTitle' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_cboTitle" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'cboTitle' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_Country" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'Country' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_Country" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'Country' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_StateUS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'StateUS' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_StateUS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'StateUS' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_cboCardType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'cboCardType' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_cboCardType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'cboCardType' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_cboMonth" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'cboMonth' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_cboMonth" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'cboMonth' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_cboYear" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'cboYear' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_cboYear" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'cboYear' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:choice>
+    </xs:group>
+
+</xs:schema>

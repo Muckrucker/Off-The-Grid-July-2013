@@ -1,0 +1,70 @@
+﻿<RunSettings>
+	<!-- Configurations that affect the Test Framework -->
+	<RunConfiguration>
+		<!-- Path relative to solution directory - test results will be dumped here -->
+		<ResultsDirectory>.\KeywordTestResults</ResultsDirectory>
+
+		<!-- [x86] | x64 - You can also change it from menu Test, Test Settings, Default Processor Architecture -->
+		<TargetPlatform>x86</TargetPlatform>
+
+		<!-- Framework35 | [Framework40] | Framework45 -->
+		<TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
+	</RunConfiguration>
+
+	<!-- Adapter Specific sections -->
+	<KeywordTestAdapterSettings>
+		<!--if set to true you can point to your own assemblies and not the project reference assemblies (typically gathered via NuGet)
+          Note: False will use the NuGet libraries, True will use whatever local assemblies are defined below, used for debugging-->
+		<UseCustomAssemblyList>true</UseCustomAssemblyList>
+		<Assemblies>
+			<!--full local path file - update these to your local dlls for debugging purposes-->
+			<string>C:\OTG_July_2013\OTG.Keywords.Catalog\bin\Debug\OTG.Keywords.Catalog.dll</string>
+		</Assemblies>
+
+		<!--Xml, Code, Both > if there is an error, do you want keyword xml stack trace, code stack trace, or both-->
+		<StackTraceSettings>Both</StackTraceSettings>
+
+		<!--Dictates whether to use the OptionsFilePath or OptionsCollection specified below.  
+          Note: Accepts 'Collection' or 'File' as the parameter.-->
+		<OptionsUsage>Collection</OptionsUsage>
+
+		<!--The local file location of your global parameters file-->
+		<OptionsFilePath>C:\Code\Firebird\Blackbaud\AppFx\PROJECTNAME\SETTINGSFILE.xml</OptionsFilePath>
+
+		<!-- the global parameters defined without a file-->
+		<OptionsCollection>
+			<item>
+				<key>
+					<string>URL</string>
+				</key>
+				<value>
+					<string>http://ptlr38/fundraiser?tab=3</string>
+				</value>
+			</item>
+			<item>
+				<key>
+					<string>BROWSER</string>
+				</key>
+				<value>
+					<string>Chrome</string>
+				</value>
+			</item>
+			<item>
+				<key>
+					<string>DATABASE</string>
+				</key>
+				<value>
+					<string>BBInfinity</string>
+				</value>
+			</item>
+			<item>
+				<key>
+					<string>DRIVER</string>
+				</key>
+				<value>
+					<string>WebShellUI</string>
+				</value>
+			</item>
+		</OptionsCollection>
+	</KeywordTestAdapterSettings>
+</RunSettings>

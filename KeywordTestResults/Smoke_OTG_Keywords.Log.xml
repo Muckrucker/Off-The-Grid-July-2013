@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutomationLog xmlns="http://schemas.blackbaud.com/bats/BBAutomation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.blackbaud.com/bats/BBAutomation
+    AutomationLog.xsd" 
+    test="" >
+
+    <TestsExecuted>
+        <TestCase name="Smoke Off The Grid KeywordsPlease" description="Executing the OTG keyword tests" productName="Infinity" productVersion="" testId="Smoke_OTG_Keywords" ambitionLevel="Go/No Go" impact="Critical">
+            <TestElement name="Navigate" passFail="Pass" location="Catalog_AutoBase/Navigate" timestamp="07/25/2013 17:51:55.643" timeTaken="00:00:04.4335666" criteria="OTG.Keywords.Catalog.AutoBase.Navigate(url:=&quot;www.google.com&quot;)"/>
+            <TestElement name="Navigate" passFail="Pass" location="Catalog_AutoBase/Navigate" timestamp="07/25/2013 17:52:09.195" timeTaken="00:00:13.5370111" criteria="OTG.Keywords.Catalog.AutoBase.Navigate(url:=&quot;http://ptlr38/fundraiser?tab=3&quot;)"/>
+            <TestElement name="Set_txtFirstName" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtFirstName" timestamp="07/25/2013 17:52:40.677" timeTaken="00:00:17.9652696" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtFirstName(value:=&quot;Auto-Auto&quot;)"/>
+            <TestElement name="Verify_txtFirstName" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtFirstName" timestamp="07/25/2013 17:52:40.689" timeTaken="00:00:00.0051438" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtFirstName(value:=&quot;Auto-Auto&quot;)"/>
+            <TestElement name="Set_AddressLine" passFail="Pass" location="Catalog_FundraiserTwo/Set_AddressLine" timestamp="07/25/2013 17:52:40.701" timeTaken="00:00:00.0050074" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_AddressLine(value:=&quot;123 Abc St.&quot;)"/>
+            <TestElement name="Verify_AddressLine" passFail="Pass" location="Catalog_FundraiserTwo/Verify_AddressLine" timestamp="07/25/2013 17:52:40.713" timeTaken="00:00:00.0041121" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_AddressLine(value:=&quot;123 Abc St.&quot;)"/>
+            <TestElement name="Click_Next" passFail="Pass" location="Catalog_FundraiserTwo/Click_Next" timestamp="07/25/2013 17:52:40.732" timeTaken="00:00:00.0079835" criteria="OTG.Keywords.Catalog.FundraiserTwo.Click_Next()"/>
+        </TestCase>
+    </TestsExecuted>
+</AutomationLog>

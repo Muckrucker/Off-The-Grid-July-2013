@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OTG Test Harness", "OTG Test Harness.vbproj", "{7887D074-7CF6-4CAE-BC20-2D9C55A8405A}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OTG.Keywords.Catalog", "..\OTG.Keywords.Catalog\OTG.Keywords.Catalog.vbproj", "{74E63208-E86D-4E50-856B-65A9B7A7F896}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schemas", "Schemas", "{6EE08E00-7654-4437-8CDD-A90B8B516444}"
+	ProjectSection(SolutionItems) = preProject
+		OTG.Keywords.Catalog.xsd = OTG.Keywords.Catalog.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA6EF044-E1C0-48C2-8CA3-F8953317EDCC}"
+	ProjectSection(SolutionItems) = preProject
+		keyword.runsettings = keyword.runsettings
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OTG.Keywords.Catalog", "OTG.Keywords.Catalog\OTG.Keywords.Catalog.vbproj", "{74E63208-E86D-4E50-856B-65A9B7A7F896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
