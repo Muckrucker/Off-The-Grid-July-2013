@@ -12,8 +12,9 @@ Public Class AutoBase
     Public Shared driver As IWebDriver
 
     Public Sub New()
-        System.Diagnostics.Debugger.Launch()
-        driver = New ChromeDriver()
+        If driver Is Nothing Then
+            driver = New ChromeDriver()
+        End If
     End Sub
 
     Public Shared Sub Navigate(ByVal url As String)

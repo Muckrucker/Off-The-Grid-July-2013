@@ -18,10 +18,6 @@ Public Class Form1
     End Sub
 
     Private Sub btn_Filter_Click(sender As Object, e As EventArgs) Handles btn_Filter.Click
-        If _xDoc Is Nothing Then
-            btn_go_Click(Nothing, Nothing)
-        End If
-
         'inject the htmlasxml script and fetch the returned xmldoc
         Dim js As IJavaScriptExecutor = _driver
         js.ExecuteScript(My.Resources.HtmlToXml)
@@ -47,8 +43,9 @@ Public Class Form1
         'type-based elements
         'grab input text boxes
         textInputElements = From node In _xDoc.Descendants("input")
-                            Where node.Attribute("type").Value.Equals("text", StringComparison.OrdinalIgnoreCase) Or
-                                    node.Attribute("type").Value.Equals("password", StringComparison.OrdinalIgnoreCase)
+                            Where (node.Attribute("type") IsNot Nothing AndAlso
+                                    (node.Attribute("type").Value.Equals("text", StringComparison.OrdinalIgnoreCase) Or
+                                    node.Attribute("type").Value.Equals("password", StringComparison.OrdinalIgnoreCase)))
                             Select node
         elementsToConvert_Type = textInputElements
 
@@ -71,10 +68,11 @@ Public Class Form1
 
         'grab checkbox elements
         checkboxElements = From node In _xDoc.Descendants("input")
-                         Where node.Attribute("type").Value.Equals("checkbox", StringComparison.OrdinalIgnoreCase) Or
+                         Where (node.Attribute("type") IsNot Nothing AndAlso
+                                (node.Attribute("type").Value.Equals("checkbox", StringComparison.OrdinalIgnoreCase) Or
                                 node.Attribute("type").Value.Equals("submit", StringComparison.OrdinalIgnoreCase) Or
                                 node.Attribute("type").Value.Equals("radio", StringComparison.OrdinalIgnoreCase) Or
-                                node.Attribute("type").Value.Equals("button", StringComparison.OrdinalIgnoreCase)
+                                node.Attribute("type").Value.Equals("button", StringComparison.OrdinalIgnoreCase)))
                          Select node
         elementsToConvert_Click = elementsToConvert_Click.Union(checkboxElements)
 
@@ -92,9 +90,6 @@ Public Class Form1
         finalXDoc.Root.Add(updateElements(New List(Of XElement)(elementsToConvert_Click), "Click").ToArray)
         finalXDoc.Root.Add(updateElements(New List(Of XElement)(elementsToConvert_Type), "Type").ToArray)
         finalXDoc.Root.Add(updateElements(New List(Of XElement)(elementsToConvert_Select), "Select").ToArray)
-        '  Dim list As List(Of XElement) = updateElements(New List(Of XElement)(elementsToConvert_Click), "Click")
-        'list = list.Union(updateElements(New List(Of XElement)(elementsToConvert_Type), "Type"))
-        'list = list.Union(updateElements(New List(Of XElement)(elementsToConvert_Select), "Select"))
 
         tbResults.Text = finalXDoc.ToString
         CreateClasses(finalXDoc)
@@ -383,6 +378,9 @@ Public Class Form1
         generatedString.AppendLine(String.Format("''' Clicks on the '{0}' button", subName))
         generatedString.AppendLine("''' </summary>")
         generatedString.AppendLine(String.Format("Public Sub Click_{0}()", subName))
+        generatedString.AppendLine("     'human-readable jquery")
+        generatedString.AppendLine(String.Format("     'AutoBase.Click(""{0}"")", HttpUtility.HtmlDecode(jQuery)))
+        generatedString.AppendLine("     'machine-readable jquery")
         generatedString.AppendLine(String.Format("     AutoBase.Click(""{0}"")", HttpUtility.HtmlEncode(jQuery)))
         generatedString.AppendLine("End Sub")
         generatedString.AppendLine()
@@ -403,6 +401,9 @@ Public Class Form1
         generatedString.AppendLine("''' <param name=""value"">The value to set in the field</param>)")
         generatedString.AppendLine("''' </summary>")
         generatedString.AppendLine(String.Format("Public Sub Set_{0}(ByVal value As String)", subName))
+        generatedString.AppendLine("     'human-readable jquery")
+        generatedString.AppendLine(String.Format("     'AutoBase.SetField(""{0}"", value, FieldType.Text)", HttpUtility.HtmlDecode(jQuery)))
+        generatedString.AppendLine("     'machine-readable jquery")
         generatedString.AppendLine(String.Format("     AutoBase.SetField(""{0}"", value, FieldType.Text)", HttpUtility.HtmlEncode(jQuery)))
         generatedString.AppendLine("End Sub")
         generatedString.AppendLine()
@@ -411,6 +412,9 @@ Public Class Form1
         generatedString.AppendLine("''' <param name=""value"">The value to verify on the field</param>)")
         generatedString.AppendLine("''' </summary>")
         generatedString.AppendLine(String.Format("Public Sub Verify_{0}(ByVal value As String)", subName))
+        generatedString.AppendLine("     'human-readable jquery")
+        generatedString.AppendLine(String.Format("     'AutoBase.VerifyField(""{0}"", value, FieldType.Text)", HttpUtility.HtmlDecode(jQuery)))
+        generatedString.AppendLine("     'machine-readable jquery")
         generatedString.AppendLine(String.Format("     AutoBase.VerifyField(""{0}"", value, FieldType.Text)", HttpUtility.HtmlEncode(jQuery)))
         generatedString.AppendLine("End Sub")
         generatedString.AppendLine()
@@ -431,6 +435,9 @@ Public Class Form1
         generatedString.AppendLine("''' <param name=""value"">The value to set in the field</param>)")
         generatedString.AppendLine("''' </summary>")
         generatedString.AppendLine(String.Format("Public Sub Set_{0}(ByVal value As String)", subName))
+        generatedString.AppendLine("     'human-readable jquery")
+        generatedString.AppendLine(String.Format("     'AutoBase.SetField(""{0}"", value, FieldType.Select)", HttpUtility.HtmlDecode(jQuery)))
+        generatedString.AppendLine("     'machine-readable jquery")
         generatedString.AppendLine(String.Format("     AutoBase.SetField(""{0}"", value, FieldType.Select)", HttpUtility.HtmlEncode(jQuery)))
         generatedString.AppendLine("End Sub")
         generatedString.AppendLine()
@@ -439,6 +446,9 @@ Public Class Form1
         generatedString.AppendLine("''' <param name=""value"">The value to verify on the field</param>)")
         generatedString.AppendLine("''' </summary>")
         generatedString.AppendLine(String.Format("Public Sub Verify_{0}(ByVal value As String)", subName))
+        generatedString.AppendLine("     'human-readable jquery")
+        generatedString.AppendLine(String.Format("     'AutoBase.VerifyField(""{0}"", value, FieldType.Select)", HttpUtility.HtmlDecode(jQuery)))
+        generatedString.AppendLine("     'machine-readable jquery")
         generatedString.AppendLine(String.Format("     AutoBase.VerifyField(""{0}"", value, FieldType.Select)", HttpUtility.HtmlEncode(jQuery)))
         generatedString.AppendLine("End Sub")
         generatedString.AppendLine()

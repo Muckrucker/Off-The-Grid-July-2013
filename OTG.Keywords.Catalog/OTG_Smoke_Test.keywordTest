@@ -28,7 +28,6 @@
 					productName="Infinity" ambitionLevel="Go/No Go" impact="Critical">
       <!--Begin work here-->
 		<Catalog_AutoBase>
-			<Navigate url="www.google.com"/>
 			<Navigate url="http://ptlr38/fundraiser?tab=3"/>
 		</Catalog_AutoBase>
 		<Catalog_FundraiserTwo>
@@ -38,8 +37,24 @@
 			<Set_AddressLine value="123 Abc St."/>
 			<Verify_AddressLine value="123 Abc St."/>
 
+			<Set_CityUS value="Charleston"/>
+			<Verify_CityUS value="Charleston"/>
+
+			<Set_Country value="US"/>
+			<Verify_Country value="US"/>
+
+			<Set_txtCardholder value="Gandalf the Grey"/>
+			<Verify_txtCardholder value="Gandalf the Grey"/>
+
+			<Set_txtCardNumber value="4111 1111 1111 1111"/>
+			<Verify_txtCardNumber value="4111 1111 1111 1111"/>
+
 			<Click_Next/>
 		</Catalog_FundraiserTwo>
+
+		<!--<Catalog_SitesAndSettings>
+			
+		</Catalog_SitesAndSettings>-->
     </TestDefinition>
   </TestDefinitions>
 </KeywordTests>

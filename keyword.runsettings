@@ -18,7 +18,7 @@
 		<UseCustomAssemblyList>true</UseCustomAssemblyList>
 		<Assemblies>
 			<!--full local path file - update these to your local dlls for debugging purposes-->
-			<string>C:\OTG_July_2013\OTG.Keywords.Catalog\bin\Debug\OTG.Keywords.Catalog.dll</string>
+			<string>C:\Users\StephenMc\Documents\GitHub\Off-The-Grid-July-2013\OTG.Keywords.Catalog\bin\Debug\OTG.Keywords.Catalog.dll</string>
 		</Assemblies>
 
 		<!--Xml, Code, Both > if there is an error, do you want keyword xml stack trace, code stack trace, or both-->
