@@ -1139,12 +1139,12 @@ End Sub
 ''' <summary>
 ''' Clicks on the 'INPUT' button
 ''' </summary>
-    Public Sub Click_INPUT()
-        'human-readable jquery
-        'AutoBase.Click("$("input[id$='4'][type='checkbox']")")
-        'machine-readable jquery
-        AutoBase.Click("$(&quot;input[id$=&#39;4&#39;][type=&#39;checkbox&#39;]&quot;)")
-    End Sub
+Public Sub Click_INPUT()
+     'human-readable jquery
+     'AutoBase.Click("$("input[id$='4'][type='checkbox']")")
+     'machine-readable jquery
+     AutoBase.Click("$(&quot;input[id$=&#39;4&#39;][type=&#39;checkbox&#39;]&quot;)")
+End Sub
 
 
 ''' <summary>
@@ -1238,12 +1238,12 @@ End Sub
 ''' <summary>
 ''' Clicks on the 'input' button
 ''' </summary>
-    Public Sub Click_input_gen97()
-        'human-readable jquery
-        'AutoBase.Click("$("input[id$='0'][type='checkbox']")")
-        'machine-readable jquery
-        AutoBase.Click("$(&quot;input[id$=&#39;0&#39;][type=&#39;checkbox&#39;]&quot;)")
-    End Sub
+Public Sub Click_input()
+     'human-readable jquery
+     'AutoBase.Click("$("input[id$='0'][type='checkbox']")")
+     'machine-readable jquery
+     AutoBase.Click("$(&quot;input[id$=&#39;0&#39;][type=&#39;checkbox&#39;]&quot;)")
+End Sub
 
 
 ''' <summary>
@@ -4789,22 +4789,22 @@ End Sub
 ''' Sets the text on the 'ddEmailPhoneType' field
 ''' <param name="value">The value to set in the field</param>)
 ''' </summary>
-    Public Sub Set_ddEmailPhoneType_gen7(ByVal value As String)
-        'human-readable jquery
-        'AutoBase.SetField("$("select[id$='ddEmailPhoneType'][style*='width:136px;']")", value, FieldType.Select)
-        'machine-readable jquery
-        AutoBase.SetField("$(&quot;select[id$=&#39;ddEmailPhoneType&#39;][style*=&#39;width:136px;&#39;]&quot;)", value, FieldType.Select)
-    End Sub
+Public Sub Set_ddEmailPhoneType(ByVal value As String)
+     'human-readable jquery
+     'AutoBase.SetField("$("select[id$='ddEmailPhoneType'][style*='width:136px;']")", value, FieldType.Select)
+     'machine-readable jquery
+     AutoBase.SetField("$(&quot;select[id$=&#39;ddEmailPhoneType&#39;][style*=&#39;width:136px;&#39;]&quot;)", value, FieldType.Select)
+End Sub
 
 ''' <summary>
 ''' Verifies the text on the 'ddEmailPhoneType' field
 ''' <param name="value">The value to verify on the field</param>)
 ''' </summary>
-    Public Sub Verify_ddEmailPhoneType_gen7(ByVal value As String)
-        'human-readable jquery
-        'AutoBase.VerifyField("$("select[id$='ddEmailPhoneType'][style*='width:136px;']")", value, FieldType.Select)
-        'machine-readable jquery
-        AutoBase.VerifyField("$(&quot;select[id$=&#39;ddEmailPhoneType&#39;][style*=&#39;width:136px;&#39;]&quot;)", value, FieldType.Select)
-    End Sub
+Public Sub Verify_ddEmailPhoneType(ByVal value As String)
+     'human-readable jquery
+     'AutoBase.VerifyField("$("select[id$='ddEmailPhoneType'][style*='width:136px;']")", value, FieldType.Select)
+     'machine-readable jquery
+     AutoBase.VerifyField("$(&quot;select[id$=&#39;ddEmailPhoneType&#39;][style*=&#39;width:136px;&#39;]&quot;)", value, FieldType.Select)
+End Sub
 
 End Class

@@ -7,20 +7,34 @@
 
     <TestsExecuted>
         <TestCase name="Smoke Off The Grid KeywordsPlease" description="Executing the OTG keyword tests" productName="Infinity" productVersion="" testId="Smoke_OTG_Keywords" ambitionLevel="Go/No Go" impact="Critical">
-            <TestElement name="Navigate" passFail="Pass" location="Catalog_AutoBase/Navigate" timestamp="07/26/2013 07:57:28.429" timeTaken="00:00:01.7307617" criteria="OTG.Keywords.Catalog.AutoBase.Navigate(url:=&quot;http://ptlr38/fundraiser?tab=3&quot;)"/>
-            <TestElement name="Set_txtFirstName" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtFirstName" timestamp="07/26/2013 07:57:28.442" timeTaken="00:00:00.0103955" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtFirstName(value:=&quot;Auto-Auto&quot;)"/>
-            <TestElement name="Verify_txtFirstName" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtFirstName" timestamp="07/26/2013 07:57:28.455" timeTaken="00:00:00.0039770" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtFirstName(value:=&quot;Auto-Auto&quot;)"/>
-            <TestElement name="Set_AddressLine" passFail="Pass" location="Catalog_FundraiserTwo/Set_AddressLine" timestamp="07/26/2013 07:57:28.468" timeTaken="00:00:00.0046737" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_AddressLine(value:=&quot;123 Abc St.&quot;)"/>
-            <TestElement name="Verify_AddressLine" passFail="Pass" location="Catalog_FundraiserTwo/Verify_AddressLine" timestamp="07/26/2013 07:57:28.481" timeTaken="00:00:00.0044612" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_AddressLine(value:=&quot;123 Abc St.&quot;)"/>
-            <TestElement name="Set_CityUS" passFail="Pass" location="Catalog_FundraiserTwo/Set_CityUS" timestamp="07/26/2013 07:57:28.493" timeTaken="00:00:00.0040043" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_CityUS(value:=&quot;Charleston&quot;)"/>
-            <TestElement name="Verify_CityUS" passFail="Pass" location="Catalog_FundraiserTwo/Verify_CityUS" timestamp="07/26/2013 07:57:28.511" timeTaken="00:00:00.0090956" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_CityUS(value:=&quot;Charleston&quot;)"/>
-            <TestElement name="Set_Country" passFail="Pass" location="Catalog_FundraiserTwo/Set_Country" timestamp="07/26/2013 07:57:28.525" timeTaken="00:00:00.0001445" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_Country(value:=&quot;US&quot;)"/>
-            <TestElement name="Verify_Country" passFail="Pass" location="Catalog_FundraiserTwo/Verify_Country" timestamp="07/26/2013 07:57:28.527" timeTaken="00:00:00.0000893" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_Country(value:=&quot;US&quot;)"/>
-            <TestElement name="Set_txtCardholder" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtCardholder" timestamp="07/26/2013 07:57:29.537" timeTaken="00:00:01.0080780" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtCardholder(value:=&quot;Gandalf the Grey&quot;)"/>
-            <TestElement name="Verify_txtCardholder" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtCardholder" timestamp="07/26/2013 07:57:29.544" timeTaken="00:00:00.0047773" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtCardholder(value:=&quot;Gandalf the Grey&quot;)"/>
-            <TestElement name="Set_txtCardNumber" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtCardNumber" timestamp="07/26/2013 07:57:29.556" timeTaken="00:00:00.0043247" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtCardNumber(value:=&quot;4111 1111 1111 1111&quot;)"/>
-            <TestElement name="Verify_txtCardNumber" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtCardNumber" timestamp="07/26/2013 07:57:29.569" timeTaken="00:00:00.0050844" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtCardNumber(value:=&quot;4111 1111 1111 1111&quot;)"/>
-            <TestElement name="Click_Next" passFail="Pass" location="Catalog_FundraiserTwo/Click_Next" timestamp="07/26/2013 07:57:29.587" timeTaken="00:00:00.0083368" criteria="OTG.Keywords.Catalog.FundraiserTwo.Click_Next()"/>
+            <TestElement name="Navigate" passFail="Pass" location="Catalog_AutoBase/Navigate" timestamp="07/26/2013 09:36:25.725" timeTaken="00:00:30.4783669" criteria="OTG.Keywords.Catalog.AutoBase.Navigate(url:=&quot;http://ptlr38/fundraiser?tab=3&quot;)"/>
+            <TestElement name="Set_txtFirstName" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtFirstName" timestamp="07/26/2013 09:36:25.748" timeTaken="00:00:00.0133874" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtFirstName(value:=&quot;Auto-Auto&quot;)"/>
+            <TestElement name="Verify_txtFirstName" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtFirstName" timestamp="07/26/2013 09:36:25.769" timeTaken="00:00:00.0106543" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtFirstName(value:=&quot;Auto-Auto&quot;)"/>
+            <TestElement name="Set_AddressLine" passFail="Pass" location="Catalog_FundraiserTwo/Set_AddressLine" timestamp="07/26/2013 09:36:25.781" timeTaken="00:00:00.0047105" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_AddressLine(value:=&quot;123 Abc St.&quot;)"/>
+            <TestElement name="Verify_AddressLine" passFail="Pass" location="Catalog_FundraiserTwo/Verify_AddressLine" timestamp="07/26/2013 09:36:25.794" timeTaken="00:00:00.0047413" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_AddressLine(value:=&quot;123 Abc St.&quot;)"/>
+            <TestElement name="Set_CityUS" passFail="Pass" location="Catalog_FundraiserTwo/Set_CityUS" timestamp="07/26/2013 09:36:25.806" timeTaken="00:00:00.0047375" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_CityUS(value:=&quot;Charleston&quot;)"/>
+            <TestElement name="Verify_CityUS" passFail="Pass" location="Catalog_FundraiserTwo/Verify_CityUS" timestamp="07/26/2013 09:36:25.823" timeTaken="00:00:00.0087042" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_CityUS(value:=&quot;Charleston&quot;)"/>
+            <TestElement name="Set_Country" passFail="Pass" location="Catalog_FundraiserTwo/Set_Country" timestamp="07/26/2013 09:36:25.830" timeTaken="00:00:00.0001240" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_Country(value:=&quot;US&quot;)"/>
+            <TestElement name="Verify_Country" passFail="Pass" location="Catalog_FundraiserTwo/Verify_Country" timestamp="07/26/2013 09:36:25.837" timeTaken="00:00:00.0000889" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_Country(value:=&quot;US&quot;)"/>
+            <TestElement name="Set_txtCardholder" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtCardholder" timestamp="07/26/2013 09:36:25.848" timeTaken="00:00:00.0047332" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtCardholder(value:=&quot;Gandalf the Grey&quot;)"/>
+            <TestElement name="Verify_txtCardholder" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtCardholder" timestamp="07/26/2013 09:36:25.859" timeTaken="00:00:00.0045638" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtCardholder(value:=&quot;Gandalf the Grey&quot;)"/>
+            <TestElement name="Set_txtCardNumber" passFail="Pass" location="Catalog_FundraiserTwo/Set_txtCardNumber" timestamp="07/26/2013 09:36:25.876" timeTaken="00:00:00.0041866" criteria="OTG.Keywords.Catalog.FundraiserTwo.Set_txtCardNumber(value:=&quot;4111 1111 1111 1111&quot;)"/>
+            <TestElement name="Verify_txtCardNumber" passFail="Pass" location="Catalog_FundraiserTwo/Verify_txtCardNumber" timestamp="07/26/2013 09:36:26.890" timeTaken="00:00:01.0073312" criteria="OTG.Keywords.Catalog.FundraiserTwo.Verify_txtCardNumber(value:=&quot;4111 1111 1111 1111&quot;)"/>
+            <TestElement name="Click_Next" passFail="Pass" location="Catalog_FundraiserTwo/Click_Next" timestamp="07/26/2013 09:36:26.908" timeTaken="00:00:00.0085374" criteria="OTG.Keywords.Catalog.FundraiserTwo.Click_Next()"/>
+            <TestElement name="Navigate" passFail="Pass" location="Catalog_AutoBase/Navigate" timestamp="07/26/2013 09:36:29.728" timeTaken="00:00:02.8124288" criteria="OTG.Keywords.Catalog.AutoBase.Navigate(url:=&quot;http://espn.com&quot;)"/>
+            <TestElement name="Click_NFL" passFail="Fail" location="Catalog_espn_homepage/Click_NFL" timestamp="07/26/2013 09:36:29.751" timeTaken="00:00:00.0100520" criteria="OTG.Keywords.Catalog.espn_homepage.Click_NFL()" error="unknown error: Property &apos;$&apos; of object [object Object] is not a function
+  (Session info: chrome=28.0.1500.72)
+  (Driver info: chromedriver=2.1,platform=Windows NT 6.1 SP1 x86_64)
+System.InvalidOperationException
+
+Stack trace:
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScriptInternal(String script, Boolean async, Object[] args)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScript(String script, Object[] args)
+   at OTG.Keywords.Catalog.AutoBase.Click(String jQuery) in C:\Users\StephenMc\Documents\GitHub\Off-The-Grid-July-2013\OTG.Keywords.Catalog\AutoBase.vb:line 26
+   at OTG.Keywords.Catalog.espn_homepage.Click_NFL() in C:\Users\StephenMc\Documents\GitHub\Off-The-Grid-July-2013\OTG.Keywords.Catalog\espn_homepage.vb:line 618
+"/>
         </TestCase>
     </TestsExecuted>
 </AutomationLog>

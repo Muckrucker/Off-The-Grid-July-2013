@@ -21,6 +21,7 @@ Public Class Form1
         'inject the htmlasxml script and fetch the returned xmldoc
         Dim js As IJavaScriptExecutor = _driver
         js.ExecuteScript(My.Resources.HtmlToXml)
+        Threading.Thread.Sleep(1000)
         _xDoc = XDocument.Parse(CStr(js.ExecuteScript("return HtmlAsXml.toXmlString();")))
 
         'all elements by execution type
@@ -104,11 +105,11 @@ Public Class Form1
                 newElement.SetAttributeValue("type", type)
                 'check if the list already has an element with the same name, if it does, add a counter
                 For Each updatedElement As XElement In updatedList
-                    If updatedElement.Name.LocalName = newElement.Name.LocalName Then
+                    If updatedElement.Name.LocalName.Equals(newElement.Name.LocalName, StringComparison.OrdinalIgnoreCase) Then
                         'check to see if we've already hit a "match" before. input -> input_gen1 -> input_gen2 ect
                         Dim found As Boolean = False
                         For Each match As MatchCount In matchList
-                            If match.name = newElement.Name.LocalName Then
+                            If match.name.Equals(newElement.Name.LocalName, StringComparison.OrdinalIgnoreCase) Then
                                 match.count = match.count + 1
                                 newElement.Name = newElement.Name.LocalName & "_gen" & match.count
                                 found = True
@@ -204,7 +205,7 @@ Public Class Form1
         Dim returnedRecordCount As Integer = CInt(executeJquerySize(jquery))
         If returnedRecordCount > 0 Then
             Try
-                updatedElement = New XElement(fieldName.Replace("-", "_"))
+                updatedElement = New XElement(fieldName.Replace("-", "_").Replace(".", "_"))
             Catch ex As Exception
                 updatedElement = New XElement(tagName)
             End Try

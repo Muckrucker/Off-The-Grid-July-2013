@@ -17,6 +17,18 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="Catalog_espn_homepage" substitutionGroup="UI:UITask">
+        <xs:complexType mixed="true">
+            <xs:complexContent>
+                <xs:extension base="UI:Type_UITask">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:group minOccurs="0" maxOccurs="unbounded" ref="UI:Catalog_espn_homepage.Tabs"/>
+                    </xs:choice>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+
     <xs:element name="Catalog_FundraiserTwo" substitutionGroup="UI:UITask">
         <xs:complexType mixed="true">
             <xs:complexContent>
@@ -110,6 +122,3335 @@
                                             </xs:restriction>
                                         </xs:simpleType>
                                     </xs:attribute>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:choice>
+    </xs:group>
+
+    <xs:group name="Catalog_espn_homepage.Tabs">
+        <xs:choice>
+            <xs:element name="Click_Tennis_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Tennis_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Boxing_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Boxing_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MMA_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MMA_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Recruiting" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Recruiting' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_OlympicSports" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'OlympicSports' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_espnW_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'espnW_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SCORES" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SCORES' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NFL_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NFL_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MLB_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MLB_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NBA_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NBA_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NHL_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NHL_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_CollegeFootball" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'CollegeFootball' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_CollegeBasketball" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'CollegeBasketball' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Soccer_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Soccer_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NASCAR_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NASCAR_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_FANTASY_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'FANTASY_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Football" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Football' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Baseball" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Baseball' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_StreakfortheCash" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'StreakfortheCash' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SPORTSNATION" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SPORTSNATION' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Polls" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Polls' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Chats" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Chats' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Profiles" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Profiles' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Groups" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Groups' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_VIDEO" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'VIDEO' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MostRecent" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MostRecent' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Highlights" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Highlights' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Music" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Music' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SportsPassport" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SportsPassport' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SportsCalendar" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SportsCalendar' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Arcade" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Arcade' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Contests" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Contests' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ContactUs" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ContactUs' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MemberServices" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MemberServices' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_myESPN_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'myESPN_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPNAlerts" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPNAlerts' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_DeveloperCenter" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'DeveloperCenter' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_DailyLines" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'DailyLines' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WidgetCenter" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WidgetCenter' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_RSS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'RSS' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_TVLISTINGS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'TVLISTINGS' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WatchESPN" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WatchESPN' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_RADIO_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'RADIO_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPNTHEMAGAZINE" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPNTHEMAGAZINE' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SHOP_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SHOP_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SPORTSCENTER" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SPORTSCENTER' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_TEAMESPN" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'TEAMESPN' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPNFRONTROW" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPNFRONTROW' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Help" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Help' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Press" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Press' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_AdvertiseonESPN_com" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'AdvertiseonESPN_com' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SalesMediaKit" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SalesMediaKit' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Interest_BasedAds" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Interest_BasedAds' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ReportaBug" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ReportaBug' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Corrections_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Corrections_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ContactUs_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ContactUs_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SiteMap" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SiteMap' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_JobsatESPN" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'JobsatESPN' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Go_com" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Go_com' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen72" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen72' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_TermsofUse" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'TermsofUse' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen73" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen73' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_submit" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'submit' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_input" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'input' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_input_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'input_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_input_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'input_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Set_searchString" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Sets the text on the 'searchString' field
+ The value to set in the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Verify_searchString" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Verifies the text on the 'searchString' field
+ The value to verify on the field)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                                    <xs:attribute name="value" type="xs:string" use="required"/>
+
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen19" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen19' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen20" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen20' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen21" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen21' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen22" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen22' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen23" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen23' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NBAWesternConferencerankings" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NBAWesternConferencerankings' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Eastern" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Eastern' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_scFeedIcon" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'scFeedIcon' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ZahagoalsparesUnitedblushes" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ZahagoalsparesUnitedblushes' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_columnist" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'columnist' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_columnist_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'columnist_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen24" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen24' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen25" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen25' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen26" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen26' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen27" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen27' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ExploringMuirfield" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ExploringMuirfield' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen28" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen28' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen29" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen29' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen30" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen30' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen31" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen31' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen32" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen32' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen33" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen33' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen34" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen34' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen35" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen35' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen36" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen36' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen37" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen37' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Rankings" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Rankings' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen38" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen38' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Rankings_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Rankings_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen39" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen39' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen40" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen40' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen41" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen41' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_featvid" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'featvid' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ShowingHisStuff" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ShowingHisStuff' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen42" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen42' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_featvid_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'featvid_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_HarperStrikes" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'HarperStrikes' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen43" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen43' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature_gen4" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature_gen4' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature_gen5" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature_gen5' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen44" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen44' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen45" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen45' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen46" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen46' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature_gen6" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature_gen6' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_feature_gen7" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'feature_gen7' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Gallery" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Gallery' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen47" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen47' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen48" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen48' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen49" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen49' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen50" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen50' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen51" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen51' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_KlinsmannthrilledbyU_S_win" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'KlinsmannthrilledbyU_S_win' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen52" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen52' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen53" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen53' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen54" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen54' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen55" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen55' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen56" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen56' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen57" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen57' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen58" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen58' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Tumblers" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Tumblers' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen59" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen59' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen60" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen60' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MTR" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MTR' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen61" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen61' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen62" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen62' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen63" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen63' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPNOmbudsman" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPNOmbudsman' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Comment" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Comment' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Corrections" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Corrections' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen64" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen64' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen65" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen65' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_view_map" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'view_map' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_discuss" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'discuss' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen66" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen66' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen67" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen67' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen68" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen68' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen69" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen69' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen70" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen70' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen71" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen71' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MORESPORTS_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MORESPORTS_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Racing" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Racing' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Golf_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Golf_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_installitnow" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'installitnow' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_nothanks" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'nothanks' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_cbOverlay" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'cbOverlay' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SignIn" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SignIn' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Register" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Register' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_USA" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'USA' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPAÑOL" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPAÑOL' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Asia" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Asia' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Australia" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Australia' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Brazil" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Brazil' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_UnitedKingdom" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'UnitedKingdom' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_BOSTON" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'BOSTON' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_CHICAGO" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'CHICAGO' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_DALLAS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'DALLAS' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_LOSANGELES" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'LOSANGELES' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NEWYORK" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NEWYORK' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_TabletVersion" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'TabletVersion' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Shop" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Shop' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MLB" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MLB' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Golf" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Golf' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Cricket" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Cricket' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WNBA" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WNBA' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_myScores" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'myScores' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen4" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen4' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen5" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen5' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Signin_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Signin_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_TOPSTORIES" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'TOPSTORIES' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WATCHLIVE" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WATCHLIVE' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPN1" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPN1' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_livevideowatch_mem_link" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'livevideowatch_mem_link' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WatchNow" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WatchNow' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPN2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPN2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_livevideowatch_mem_link_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'livevideowatch_mem_link_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WatchNow_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WatchNow_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPNU" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPNU' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_livevideowatch_mem_link_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'livevideowatch_mem_link_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WatchNow_gen3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WatchNow_gen3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_ESPN3" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'ESPN3' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_livevideowatch_mem_link_gen4" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'livevideowatch_mem_link_gen4' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WatchNow_gen4" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WatchNow_gen4' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_livevideowatch_mem_link_gen5" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'livevideowatch_mem_link_gen5' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WatchNow_gen5" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WatchNow_gen5' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen6" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen6' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen7" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen7' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen8" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen8' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen9" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen9' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen10" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen10' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen11" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen11' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen12" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen12' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen13" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen13' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen14" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen14' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MyESPN" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MyESPN' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NFL" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NFL' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MLB_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MLB_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NBA" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NBA' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NHL" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NHL' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NCAAF" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NCAAF' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NCAAM" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NCAAM' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_NASCAR" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'NASCAR' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SOCCER" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SOCCER' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_GOLF_gen2" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'GOLF_gen2' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_TENNIS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'TENNIS' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_BOXING" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'BOXING' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MMA" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MMA' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MORESPORTS" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MORESPORTS' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_INSIDER" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'INSIDER' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SN" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SN' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_RADIO" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'RADIO' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_espnW" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'espnW' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_FANTASY" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'FANTASY' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_WATCH" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'WATCH' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_HEADLINES" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'HEADLINES' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_MYHEADLINES" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'MYHEADLINES' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_SHARES" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'SHARES' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen15" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen15' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_FalconsextendRyanfiveyears" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'FalconsextendRyanfiveyears' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Yasinskas" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Yasinskas' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen16" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen16' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_Matthews" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'Matthews' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen17" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen17' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Click_a_gen18" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Clicks on the 'a_gen18' button</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:complexContent>
+                        <xs:extension base="UI:Type_UIElement">
+                            <xs:sequence>
+                            </xs:sequence>
                         </xs:extension>
                     </xs:complexContent>
                 </xs:complexType>
@@ -5645,7 +8986,7 @@
                 </xs:complexType>
             </xs:element>
 
-            <xs:element name="Click_INPUT_1" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Click_INPUT" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Clicks on the 'INPUT' button</xs:documentation>
                 </xs:annotation>
@@ -5771,7 +9112,7 @@
                 </xs:complexType>
             </xs:element>
 
-            <xs:element name="Click_input" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Click_input_gen97" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Clicks on the 'input' button</xs:documentation>
                 </xs:annotation>
