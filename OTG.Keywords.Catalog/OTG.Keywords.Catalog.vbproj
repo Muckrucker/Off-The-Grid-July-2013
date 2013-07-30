@@ -69,6 +69,8 @@
   <ItemGroup>
     <Compile Include="AutoBase.vb" />
     <Compile Include="espn_homepage.vb" />
+    <Compile Include="FundraiserFour.vb" />
+    <Compile Include="FundraiserThree.vb" />
     <Compile Include="FundraiserTwo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

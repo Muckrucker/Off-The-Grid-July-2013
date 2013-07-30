@@ -30,7 +30,8 @@
 		<Catalog_AutoBase>
 			<Navigate url="http://ptlr38/fundraiser?tab=3"/>
 		</Catalog_AutoBase>
-		<Catalog_FundraiserTwo>
+		
+		<Catalog_FundraiserThree>
 			<Set_txtFirstName value="Auto-Auto"/>
 			<Verify_txtFirstName value="Auto-Auto"/>
 			
@@ -50,7 +51,7 @@
 			<Verify_txtCardNumber value="4111 1111 1111 1111"/>
 
 			<Click_Next/>
-		</Catalog_FundraiserTwo>
+		</Catalog_FundraiserThree>
 		
 		<!--<Catalog_espn_homepage>
 			<Click_NFL/>
